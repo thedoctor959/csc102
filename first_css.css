@@ -1,0 +1,31 @@
+
+
+body {
+  background-color: blue;
+  color:aliceblue
+
+}
+
+h1 {
+ 
+  text-align: center;
+}
+
+p {
+    height: 6000px;
+    width: 200px;
+    padding: 5px;
+    float: left;
+    line-height: 30px;
+
+
+  font-family: verdana;
+  font-size: 20px;
+}
+#meme {margin-right: 200px;}
+
+f1 { 
+    text-align: center; 
+margin-right: 200px;}
+
+
