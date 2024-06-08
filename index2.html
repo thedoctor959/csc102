@@ -1,0 +1,58 @@
+<!-- Trevor harned csc102 6/8/24 assignment 4.1-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>index2.0</title>
+
+<style>
+    /* postions image element and styles page */
+
+    body{background-color: rgb(3, 3, 69);
+        text-align: center;}
+    #meme {
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        height: 500px;
+    }
+</style>
+</head>
+<body>
+<img id="meme" src="C:/Users/THARN/OneDrive/Desktop/SCHOOL/ya-i-did.gif">
+<button style="background-color: #4CAF50; font-size: 50px" onclick="startmove()">Start</button>
+<button style="background-color: #c7130d; font-size: 50px;" onclick="stopmove()">Stop</button>
+
+<script>
+    //sets starting for isMoving to false
+let isMoving = false;
+//assigns image to meme 
+const image = document.getElementById('meme');
+//function to set is moving to true and call moveimage function
+function startmove() {
+    if (!isMoving) {
+        isMoving = true;
+        moveImage();
+    }
+}
+
+//returns isMoving to false 
+function stopmove() {
+    isMoving = false;
+}
+//function contains movement parameters for the requestAnimationFrame and loops the function till isMoving is set back to false.
+function moveImage() {
+    if (isMoving) {
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        image.style.left = x + 'px';
+        image.style.top = y + 'px';
+        requestAnimationFrame(moveImage);
+    }
+}
+</script>
+</body>
+</html>
