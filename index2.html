@@ -15,16 +15,69 @@
         text-align: center;}
     #meme {
         position: absolute;
-        top: 10%;
+        top: 30%;
         left: 40%;
-        height: 500px;
+        height: 500px;}
+
+        
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: grey;
+            padding: 10px;
+            position: absolute;
+            top: 0%;
+            right: 40%;
+        }
+        .container a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .container a:hover {
+            background-color: #333;
+            color: #fff;
+        } 
+    .Buttons{
+        position:absolute;
+        top: 20%;
+        right: 45%;
     }
+
 </style>
 </head>
 <body>
-<img id="meme" src="C:/Users/THARN/OneDrive/Desktop/SCHOOL/ya-i-did.gif">
-<button style="background-color: #4CAF50; font-size: 50px" onclick="startmove()">Start</button>
+    <div class="container">
+        <header>
+            <nav>
+                <menu>
+                    <a href="final.html">Home</a>
+                   
+
+                   <a href="index.html">Index</a>
+                   <a href="index2.html">Index2</a>
+
+                    <a href="boards.html">Boards</a>
+
+                    <a href="game.html">Game</a>
+
+                    <a href="strings.html">Strings</a>
+                    <a href="strings2.html">Strings2</a>
+                    <a href="assignment4.2.html">Palindrome</a>
+                   </menu>
+            </nav>
+        </header>
+        </div>
+        <img id="meme" src="C:/Users/THARN/OneDrive/Desktop/SCHOOL/ya-i-did.gif">
+
+        <div class="Buttons">
+
+<button style="background-color: #4CAF50; font-size: 50px" onclick="startmove()" >Start</button>
 <button style="background-color: #c7130d; font-size: 50px;" onclick="stopmove()">Stop</button>
+    </div>
 
 <script>
     //sets starting for isMoving to false

@@ -6,8 +6,32 @@
     <title>palindrome checker</title>
     <script type="text/javascript" src="strings2.js"></script>
     <link rel="stylesheet" href="strings2.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            position: absolute;
+            top: 0%;
+            right: 40%;
+        }
+        .container a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .container a:hover {
+            background-color: #333;
+            color: #fff;
+        } </style>
+        
 </head>
 <body>
+    <div class="main">
     <H1>PALINDROME CHECKER</H1>
     <! text input box-->
     <input type="text" id="userInput" placeholder="Enter a palindrome">
@@ -16,13 +40,13 @@
     <! id results -->
     <p id="result"></p>
 
-    <audio controls autoplay loop src="game piano.wav"></audio>
+    <audio controls autoplay loop> <source src="game piano.wav" type="audio/mpeg"></audio> 
 
-    <img id="#meme" src="C:\Users\THARN\OneDrive\Desktop\SCHOOL\javascript3\patrick.jpg">
+    <img id="meme" src="C:\Users\THARN\OneDrive\Desktop\SCHOOL\javascript3\patrick.jpg">
 
     <form onsubmit="return validateInputs()">
         
-        <input type="text" id="first" required><input type="text" id="last" required>
+        <input type="text" id="first" required placeholder="firstname"><input type="text" id="last" required placeholder="lastname">
         
         <button type="submit">Submit</button>
     </form>
@@ -33,6 +57,30 @@
         
 
     </form>
+</body> 
+</div>
+
+    <div class="container">
+        <header>
+            <nav>
+                <menu>
+                    <a href="final.html">Home</a>
+                   
+
+                   <a href="index.html">Index</a>
+                   <a href="index2.html">Index2</a>
+
+                    <a href="boards.html">Boards</a>
+
+                    <a href="game.html">Game</a>
+
+                    <a href="strings.html">Strings</a>
+                    <a href="strings2.html">Strings2</a>
+                    <a href="assignment4.2.html">Palindrome</a>
+                   </menu>
+            </nav>
+        </header>
+        </div>
   
-</body>   
+  
 </html>

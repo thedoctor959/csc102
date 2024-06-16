@@ -6,19 +6,72 @@
     <title>game</title>
     <script type="text/javascript" src="game.js"></script>
     <link rel="stylesheet" href="game_css.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            position: absolute;
+            top: 0%;
+            right: 40%;
+        }
+        .container a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .container a:hover {
+            background-color: #333;
+            color: #fff;}
+
+        .game{position: absolute;
+        top: 10%;
+    right:30%;}
+         
+         </style>
 </head>
 <body>
+    <div class="game">
 <h1>Odd or Even</h1>
 
     <p1>This is odd or evens using user input plus random number if it even you win if odd you lose </p1>
 
     <input type="text" id="userInput" placeholder="Enter a number 1-10">
 
+    <input type="text" id="userInput2" placeholder="palindrome">
+
     <button onclick="random()">Check Sum</button>
 
     <div class="result" id="result"></div>
     
     <audio controls autoplay loop src="game piano.wav"></audio>
+</div>
+
+    <div class="container">
+        <header>
+            <nav>
+                <menu>
+                    <a href="final.html">Home</a>
+                   
+
+                   <a href="index.html">Index</a>
+                   <a href="index2.html">Index2</a>
+
+                    <a href="boards.html">Boards</a>
+
+                    <a href="game.html">Game</a>
+
+                    <a href="strings.html">Strings</a>
+                    <a href="strings2.html">Strings2</a>
+                    <a href="assignment4.2.html">Palindrome</a>
+                   </menu>
+            </nav>
+        </header>
+        </div>
     
     
 </body>

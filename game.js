@@ -10,5 +10,11 @@ function random() {
     } else {
         resultDiv.innerText = `Sum is ${sum}. You Lose!`;
         resultDiv.style.animation = 'lose 2s infinite';
+    
     }
+    function isPalindrome = (str) => {
+    console.log(str.split('').reverse().join('')); racecar
+    return str === str.split('').reverse().join('');
+}
+console.log(isPalindrome(""));     
 }
